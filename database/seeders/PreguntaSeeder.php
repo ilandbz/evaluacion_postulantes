@@ -14,7 +14,8 @@ class PreguntaSeeder extends Seeder
      */
     public function run(): void
     {
-        $id= Examen::where('titulo', 'EXAMEN DE CONVOCATORIA NRO 1')->value('id');
+        $id= Examen::where('titulo', 'EXAMEN DE CONOCIMIENTO')->value('id');
+
         $preguntas = [
             ['descripcion' => 'ESTUDIO METODOLÓGICO O CIENTÍFICO DE LAS COMPUTADORAS PARA EL MANEJO DE LA INFORMACIÓN AUTOMÁTICA.', 'respuesta' => 'COMPUTACION', 'examen_id' => $id, 'punto' => 2],
             ['descripcion' => 'APLICACION ENCARGADA DE REDACCION DE DOCUMENTOS CON FINES DE UNA OFICINA', 'respuesta' => 'MICROSOFT WORD', 'examen_id' => $id, 'punto' => 2],

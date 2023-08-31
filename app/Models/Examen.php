@@ -12,5 +12,8 @@ class Examen extends Model
     {
         return $this->hasMany(Pregunta::class,'examen_id');
     }
+    public function cargo(){
+        
+    }
 
 }
