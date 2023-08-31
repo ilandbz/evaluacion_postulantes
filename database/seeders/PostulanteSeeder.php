@@ -16,7 +16,7 @@ class PostulanteSeeder extends Seeder
     {
 
         Postulante::firstOrCreate([
-            'cargo_id' => Cargo::where('nombre', 'INGENIERO INFORMATICO')->value('id'),
+            'cargo_id' => Cargo::where('nombre', 'INGENIERO INFORMATICO  Y/O ING. EN SISTEMAS')->value('id'),
             'dni'      => '45532962', 
             'nombres'  => 'Cristian',
             'apellido_paterno'       => 'Figueroa',
