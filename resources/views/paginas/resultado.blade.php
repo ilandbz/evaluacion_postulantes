@@ -26,7 +26,7 @@
 									<div class="col-md-4" align="center">
 										<br>
 										<p style="font-size:36px; color:red">NOTA : {{ $examenpostulante['nota'] }}</p>
-										@if ($examenpostulante['nota']<13)
+										@if ($examenpostulante['nota']<11)
 											<img src="imagenes/triste.png" class="img-responsive img-thumbnail" alt="DESAPROBADO" title="DESAPROBADO" class="">
 										@else
 											<img src="imagenes/feliz.jpg" alt="APROBADO" title="APROBADO">
@@ -65,7 +65,7 @@
 						<div class="row">
 							<div class="col-md-offset-5 col-md-2">
 								<div class="img-circle">
-									@if ($examenpostulante['nota']<13)
+									@if ($examenpostulante['nota']<11)
 										<img src="imagenes/triste.png" class="img-responsive img-thumbnail" alt="DESAPROBADO" title="DESAPROBADO" class="">
 									@else
 										<img src="imagenes/feliz.jpg" alt="APROBADO" title="APROBADO">

@@ -56,9 +56,6 @@
                                                     <h5><?php echo $fila['descripcion'] ?></h5>
                                                     <input type="hidden" name="pregunta_marcacion[{{ $index + 1 }}][idpregunta]" value="<?php echo $fila['id'] ?>">
                                                     <p>
-                                                        @php
-                                                            $alternativas = $fila->alternativas->shuffle();
-                                                        @endphp
                                                         @foreach ($alternativas as $alternativa)
                                                             <div class="mb-3">
                                                                 <div class="form-check">
