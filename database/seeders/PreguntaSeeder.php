@@ -29,7 +29,7 @@ class PreguntaSeeder extends Seeder
             ],  [  'descripcion' => 'Hasta cuantos dias se puede otorgar licencias sin goce de haber por motivos particulares', 'respuesta' => '90 dias', 'examen_id' => $id, 'punto' => 1,'alternativas' => [  '90 dias','10 dias','12 dias','9 dias','N.A', ]
             ],  ]; 
         foreach ($preguntas as $menuData) {
-            $pregunta = Pregunta::firstOrCreate(
+            $pregunta = Pregunta::create(
                 [
                     'descripcion' => $menuData['descripcion'], 
                     'respuesta' => $menuData['respuesta'], 
@@ -38,7 +38,7 @@ class PreguntaSeeder extends Seeder
                 ]
             );
             foreach($menuData['alternativas'] as $alternativa){
-                $reg = Alternativa::firstOrCreate([
+                $reg = Alternativa::create([
                     'pregunta_id'   => $pregunta->id,
                     'descripcion'   => $alternativa
                 ]);
@@ -60,7 +60,7 @@ class PreguntaSeeder extends Seeder
 
 
         foreach ($preguntas as $menuData) {
-            $pregunta = Pregunta::firstOrCreate(
+            $pregunta = Pregunta::create(
                 [
                     'descripcion' => $menuData['descripcion'], 
                     'respuesta' => $menuData['respuesta'], 
@@ -69,7 +69,7 @@ class PreguntaSeeder extends Seeder
                 ]
             );
             foreach($menuData['alternativas'] as $alternativa){
-                $reg = Alternativa::firstOrCreate([
+                $reg = Alternativa::create([
                     'pregunta_id'   => $pregunta->id,
                     'descripcion'   => $alternativa
                 ]);
@@ -94,7 +94,7 @@ class PreguntaSeeder extends Seeder
         
         
                 foreach ($preguntas as $menuData) {
-            $pregunta = Pregunta::firstOrCreate(
+            $pregunta = Pregunta::create(
                 [
                     'descripcion' => $menuData['descripcion'], 
                     'respuesta' => $menuData['respuesta'], 
@@ -103,7 +103,7 @@ class PreguntaSeeder extends Seeder
                 ]
             );
             foreach($menuData['alternativas'] as $alternativa){
-                $reg = Alternativa::firstOrCreate([
+                $reg = Alternativa::create([
                     'pregunta_id'   => $pregunta->id,
                     'descripcion'   => $alternativa
                 ]);
@@ -128,7 +128,7 @@ class PreguntaSeeder extends Seeder
         
         
                 foreach ($preguntas as $menuData) {
-            $pregunta = Pregunta::firstOrCreate(
+            $pregunta = Pregunta::create(
                 [
                     'descripcion' => $menuData['descripcion'], 
                     'respuesta' => $menuData['respuesta'], 
@@ -137,7 +137,7 @@ class PreguntaSeeder extends Seeder
                 ]
             );
             foreach($menuData['alternativas'] as $alternativa){
-                $reg = Alternativa::firstOrCreate([
+                $reg = Alternativa::create([
                     'pregunta_id'   => $pregunta->id,
                     'descripcion'   => $alternativa
                 ]);
@@ -160,7 +160,7 @@ class PreguntaSeeder extends Seeder
         
         
                 foreach ($preguntas as $menuData) {
-            $pregunta = Pregunta::firstOrCreate(
+            $pregunta = Pregunta::create(
                 [
                     'descripcion' => $menuData['descripcion'], 
                     'respuesta' => $menuData['respuesta'], 
@@ -169,7 +169,7 @@ class PreguntaSeeder extends Seeder
                 ]
             );
             foreach($menuData['alternativas'] as $alternativa){
-                $reg = Alternativa::firstOrCreate([
+                $reg = Alternativa::create([
                     'pregunta_id'   => $pregunta->id,
                     'descripcion'   => $alternativa
                 ]);
@@ -194,7 +194,7 @@ class PreguntaSeeder extends Seeder
         
         
                 foreach ($preguntas as $menuData) {
-            $pregunta = Pregunta::firstOrCreate(
+            $pregunta = Pregunta::create(
                 [
                     'descripcion' => $menuData['descripcion'], 
                     'respuesta' => $menuData['respuesta'], 
@@ -203,7 +203,7 @@ class PreguntaSeeder extends Seeder
                 ]
             );
             foreach($menuData['alternativas'] as $alternativa){
-                $reg = Alternativa::firstOrCreate([
+                $reg = Alternativa::create([
                     'pregunta_id'   => $pregunta->id,
                     'descripcion'   => $alternativa
                 ]);
@@ -227,7 +227,7 @@ class PreguntaSeeder extends Seeder
         
         
                 foreach ($preguntas as $menuData) {
-            $pregunta = Pregunta::firstOrCreate(
+            $pregunta = Pregunta::create(
                 [
                     'descripcion' => $menuData['descripcion'], 
                     'respuesta' => $menuData['respuesta'], 
@@ -236,7 +236,7 @@ class PreguntaSeeder extends Seeder
                 ]
             );
             foreach($menuData['alternativas'] as $alternativa){
-                $reg = Alternativa::firstOrCreate([
+                $reg = Alternativa::create([
                     'pregunta_id'   => $pregunta->id,
                     'descripcion'   => $alternativa
                 ]);
@@ -260,7 +260,7 @@ class PreguntaSeeder extends Seeder
         
         
                 foreach ($preguntas as $menuData) {
-            $pregunta = Pregunta::firstOrCreate(
+            $pregunta = Pregunta::create(
                 [
                     'descripcion' => $menuData['descripcion'], 
                     'respuesta' => $menuData['respuesta'], 
@@ -269,7 +269,7 @@ class PreguntaSeeder extends Seeder
                 ]
             );
             foreach($menuData['alternativas'] as $alternativa){
-                $reg = Alternativa::firstOrCreate([
+                $reg = Alternativa::create([
                     'pregunta_id'   => $pregunta->id,
                     'descripcion'   => $alternativa
                 ]);
@@ -290,7 +290,7 @@ class PreguntaSeeder extends Seeder
                     ],  ]; 
         
                 foreach ($preguntas as $menuData) {
-            $pregunta = Pregunta::firstOrCreate(
+            $pregunta = Pregunta::create(
                 [
                     'descripcion' => $menuData['descripcion'], 
                     'respuesta' => $menuData['respuesta'], 
@@ -299,7 +299,7 @@ class PreguntaSeeder extends Seeder
                 ]
             );
             foreach($menuData['alternativas'] as $alternativa){
-                $reg = Alternativa::firstOrCreate([
+                $reg = Alternativa::create([
                     'pregunta_id'   => $pregunta->id,
                     'descripcion'   => $alternativa
                 ]);
@@ -320,7 +320,7 @@ class PreguntaSeeder extends Seeder
                     ],  ]; 
         
                 foreach ($preguntas as $menuData) {
-            $pregunta = Pregunta::firstOrCreate(
+            $pregunta = Pregunta::create(
                 [
                     'descripcion' => $menuData['descripcion'], 
                     'respuesta' => $menuData['respuesta'], 
@@ -329,7 +329,7 @@ class PreguntaSeeder extends Seeder
                 ]
             );
             foreach($menuData['alternativas'] as $alternativa){
-                $reg = Alternativa::firstOrCreate([
+                $reg = Alternativa::create([
                     'pregunta_id'   => $pregunta->id,
                     'descripcion'   => $alternativa
                 ]);
@@ -350,7 +350,7 @@ class PreguntaSeeder extends Seeder
                     ],  ]; 
         
                 foreach ($preguntas as $menuData) {
-            $pregunta = Pregunta::firstOrCreate(
+            $pregunta = Pregunta::create(
                 [
                     'descripcion' => $menuData['descripcion'], 
                     'respuesta' => $menuData['respuesta'], 
@@ -359,7 +359,7 @@ class PreguntaSeeder extends Seeder
                 ]
             );
             foreach($menuData['alternativas'] as $alternativa){
-                $reg = Alternativa::firstOrCreate([
+                $reg = Alternativa::create([
                     'pregunta_id'   => $pregunta->id,
                     'descripcion'   => $alternativa
                 ]);
@@ -385,7 +385,7 @@ class PreguntaSeeder extends Seeder
         
         
                 foreach ($preguntas as $menuData) {
-            $pregunta = Pregunta::firstOrCreate(
+            $pregunta = Pregunta::create(
                 [
                     'descripcion' => $menuData['descripcion'], 
                     'respuesta' => $menuData['respuesta'], 
@@ -394,7 +394,7 @@ class PreguntaSeeder extends Seeder
                 ]
             );
             foreach($menuData['alternativas'] as $alternativa){
-                $reg = Alternativa::firstOrCreate([
+                $reg = Alternativa::create([
                     'pregunta_id'   => $pregunta->id,
                     'descripcion'   => $alternativa
                 ]);
@@ -417,7 +417,7 @@ class PreguntaSeeder extends Seeder
         
         
                 foreach ($preguntas as $menuData) {
-            $pregunta = Pregunta::firstOrCreate(
+            $pregunta = Pregunta::create(
                 [
                     'descripcion' => $menuData['descripcion'], 
                     'respuesta' => $menuData['respuesta'], 
@@ -426,7 +426,7 @@ class PreguntaSeeder extends Seeder
                 ]
             );
             foreach($menuData['alternativas'] as $alternativa){
-                $reg = Alternativa::firstOrCreate([
+                $reg = Alternativa::create([
                     'pregunta_id'   => $pregunta->id,
                     'descripcion'   => $alternativa
                 ]);
@@ -450,7 +450,7 @@ class PreguntaSeeder extends Seeder
         
         
                 foreach ($preguntas as $menuData) {
-            $pregunta = Pregunta::firstOrCreate(
+            $pregunta = Pregunta::create(
                 [
                     'descripcion' => $menuData['descripcion'], 
                     'respuesta' => $menuData['respuesta'], 
@@ -459,7 +459,7 @@ class PreguntaSeeder extends Seeder
                 ]
             );
             foreach($menuData['alternativas'] as $alternativa){
-                $reg = Alternativa::firstOrCreate([
+                $reg = Alternativa::create([
                     'pregunta_id'   => $pregunta->id,
                     'descripcion'   => $alternativa
                 ]);
@@ -482,7 +482,7 @@ class PreguntaSeeder extends Seeder
 
 
         foreach ($preguntas as $menuData) {
-            $pregunta = Pregunta::firstOrCreate(
+            $pregunta = Pregunta::create(
                 [
                     'descripcion' => $menuData['descripcion'], 
                     'respuesta' => $menuData['respuesta'], 
@@ -491,7 +491,7 @@ class PreguntaSeeder extends Seeder
                 ]
             );
             foreach($menuData['alternativas'] as $alternativa){
-                $reg = Alternativa::firstOrCreate([
+                $reg = Alternativa::create([
                     'pregunta_id'   => $pregunta->id,
                     'descripcion'   => $alternativa
                 ]);
@@ -514,7 +514,7 @@ class PreguntaSeeder extends Seeder
             
             
                     foreach ($preguntas as $menuData) {
-            $pregunta = Pregunta::firstOrCreate(
+            $pregunta = Pregunta::create(
                 [
                     'descripcion' => $menuData['descripcion'], 
                     'respuesta' => $menuData['respuesta'], 
@@ -523,7 +523,7 @@ class PreguntaSeeder extends Seeder
                 ]
             );
             foreach($menuData['alternativas'] as $alternativa){
-                $reg = Alternativa::firstOrCreate([
+                $reg = Alternativa::create([
                     'pregunta_id'   => $pregunta->id,
                     'descripcion'   => $alternativa
                 ]);
@@ -544,7 +544,7 @@ class PreguntaSeeder extends Seeder
                         ],  ]; 
             
                     foreach ($preguntas as $menuData) {
-            $pregunta = Pregunta::firstOrCreate(
+            $pregunta = Pregunta::create(
                 [
                     'descripcion' => $menuData['descripcion'], 
                     'respuesta' => $menuData['respuesta'], 
@@ -553,7 +553,7 @@ class PreguntaSeeder extends Seeder
                 ]
             );
             foreach($menuData['alternativas'] as $alternativa){
-                $reg = Alternativa::firstOrCreate([
+                $reg = Alternativa::create([
                     'pregunta_id'   => $pregunta->id,
                     'descripcion'   => $alternativa
                 ]);
@@ -574,7 +574,7 @@ class PreguntaSeeder extends Seeder
                         ],  ]; 
             
                     foreach ($preguntas as $menuData) {
-            $pregunta = Pregunta::firstOrCreate(
+            $pregunta = Pregunta::create(
                 [
                     'descripcion' => $menuData['descripcion'], 
                     'respuesta' => $menuData['respuesta'], 
@@ -583,7 +583,7 @@ class PreguntaSeeder extends Seeder
                 ]
             );
             foreach($menuData['alternativas'] as $alternativa){
-                $reg = Alternativa::firstOrCreate([
+                $reg = Alternativa::create([
                     'pregunta_id'   => $pregunta->id,
                     'descripcion'   => $alternativa
                 ]);
@@ -605,7 +605,7 @@ class PreguntaSeeder extends Seeder
             
             
                     foreach ($preguntas as $menuData) {
-            $pregunta = Pregunta::firstOrCreate(
+            $pregunta = Pregunta::create(
                 [
                     'descripcion' => $menuData['descripcion'], 
                     'respuesta' => $menuData['respuesta'], 
@@ -614,7 +614,7 @@ class PreguntaSeeder extends Seeder
                 ]
             );
             foreach($menuData['alternativas'] as $alternativa){
-                $reg = Alternativa::firstOrCreate([
+                $reg = Alternativa::create([
                     'pregunta_id'   => $pregunta->id,
                     'descripcion'   => $alternativa
                 ]);
@@ -635,7 +635,7 @@ class PreguntaSeeder extends Seeder
                         ],  ]; 
             
                     foreach ($preguntas as $menuData) {
-            $pregunta = Pregunta::firstOrCreate(
+            $pregunta = Pregunta::create(
                 [
                     'descripcion' => $menuData['descripcion'], 
                     'respuesta' => $menuData['respuesta'], 
@@ -644,7 +644,7 @@ class PreguntaSeeder extends Seeder
                 ]
             );
             foreach($menuData['alternativas'] as $alternativa){
-                $reg = Alternativa::firstOrCreate([
+                $reg = Alternativa::create([
                     'pregunta_id'   => $pregunta->id,
                     'descripcion'   => $alternativa
                 ]);
@@ -665,7 +665,7 @@ class PreguntaSeeder extends Seeder
                         ],  ]; 
             
                     foreach ($preguntas as $menuData) {
-            $pregunta = Pregunta::firstOrCreate(
+            $pregunta = Pregunta::create(
                 [
                     'descripcion' => $menuData['descripcion'], 
                     'respuesta' => $menuData['respuesta'], 
@@ -674,7 +674,7 @@ class PreguntaSeeder extends Seeder
                 ]
             );
             foreach($menuData['alternativas'] as $alternativa){
-                $reg = Alternativa::firstOrCreate([
+                $reg = Alternativa::create([
                     'pregunta_id'   => $pregunta->id,
                     'descripcion'   => $alternativa
                 ]);
@@ -696,7 +696,7 @@ class PreguntaSeeder extends Seeder
             
             
                     foreach ($preguntas as $menuData) {
-            $pregunta = Pregunta::firstOrCreate(
+            $pregunta = Pregunta::create(
                 [
                     'descripcion' => $menuData['descripcion'], 
                     'respuesta' => $menuData['respuesta'], 
@@ -705,7 +705,7 @@ class PreguntaSeeder extends Seeder
                 ]
             );
             foreach($menuData['alternativas'] as $alternativa){
-                $reg = Alternativa::firstOrCreate([
+                $reg = Alternativa::create([
                     'pregunta_id'   => $pregunta->id,
                     'descripcion'   => $alternativa
                 ]);
@@ -726,7 +726,7 @@ class PreguntaSeeder extends Seeder
                         ],  ]; 
             
                     foreach ($preguntas as $menuData) {
-            $pregunta = Pregunta::firstOrCreate(
+            $pregunta = Pregunta::create(
                 [
                     'descripcion' => $menuData['descripcion'], 
                     'respuesta' => $menuData['respuesta'], 
@@ -735,7 +735,7 @@ class PreguntaSeeder extends Seeder
                 ]
             );
             foreach($menuData['alternativas'] as $alternativa){
-                $reg = Alternativa::firstOrCreate([
+                $reg = Alternativa::create([
                     'pregunta_id'   => $pregunta->id,
                     'descripcion'   => $alternativa
                 ]);
@@ -756,7 +756,7 @@ class PreguntaSeeder extends Seeder
                         ],  ]; 
             
                     foreach ($preguntas as $menuData) {
-            $pregunta = Pregunta::firstOrCreate(
+            $pregunta = Pregunta::create(
                 [
                     'descripcion' => $menuData['descripcion'], 
                     'respuesta' => $menuData['respuesta'], 
@@ -765,7 +765,7 @@ class PreguntaSeeder extends Seeder
                 ]
             );
             foreach($menuData['alternativas'] as $alternativa){
-                $reg = Alternativa::firstOrCreate([
+                $reg = Alternativa::create([
                     'pregunta_id'   => $pregunta->id,
                     'descripcion'   => $alternativa
                 ]);
@@ -786,7 +786,7 @@ class PreguntaSeeder extends Seeder
                         ],  ]; 
             
                     foreach ($preguntas as $menuData) {
-            $pregunta = Pregunta::firstOrCreate(
+            $pregunta = Pregunta::create(
                 [
                     'descripcion' => $menuData['descripcion'], 
                     'respuesta' => $menuData['respuesta'], 
@@ -795,7 +795,7 @@ class PreguntaSeeder extends Seeder
                 ]
             );
             foreach($menuData['alternativas'] as $alternativa){
-                $reg = Alternativa::firstOrCreate([
+                $reg = Alternativa::create([
                     'pregunta_id'   => $pregunta->id,
                     'descripcion'   => $alternativa
                 ]);
@@ -816,7 +816,7 @@ class PreguntaSeeder extends Seeder
                         ],  ]; 
             
                     foreach ($preguntas as $menuData) {
-            $pregunta = Pregunta::firstOrCreate(
+            $pregunta = Pregunta::create(
                 [
                     'descripcion' => $menuData['descripcion'], 
                     'respuesta' => $menuData['respuesta'], 
@@ -825,7 +825,7 @@ class PreguntaSeeder extends Seeder
                 ]
             );
             foreach($menuData['alternativas'] as $alternativa){
-                $reg = Alternativa::firstOrCreate([
+                $reg = Alternativa::create([
                     'pregunta_id'   => $pregunta->id,
                     'descripcion'   => $alternativa
                 ]);
@@ -846,7 +846,7 @@ class PreguntaSeeder extends Seeder
                         ],  ]; 
             
                     foreach ($preguntas as $menuData) {
-            $pregunta = Pregunta::firstOrCreate(
+            $pregunta = Pregunta::create(
                 [
                     'descripcion' => $menuData['descripcion'], 
                     'respuesta' => $menuData['respuesta'], 
@@ -855,7 +855,7 @@ class PreguntaSeeder extends Seeder
                 ]
             );
             foreach($menuData['alternativas'] as $alternativa){
-                $reg = Alternativa::firstOrCreate([
+                $reg = Alternativa::create([
                     'pregunta_id'   => $pregunta->id,
                     'descripcion'   => $alternativa
                 ]);
@@ -876,7 +876,7 @@ class PreguntaSeeder extends Seeder
                         ],  ]; 
 
         foreach ($preguntas as $menuData) {
-            $pregunta = Pregunta::firstOrCreate(
+            $pregunta = Pregunta::create(
                 [
                     'descripcion' => $menuData['descripcion'], 
                     'respuesta' => $menuData['respuesta'], 
@@ -885,7 +885,7 @@ class PreguntaSeeder extends Seeder
                 ]
             );
             foreach($menuData['alternativas'] as $alternativa){
-                $reg = Alternativa::firstOrCreate([
+                $reg = Alternativa::create([
                     'pregunta_id'   => $pregunta->id,
                     'descripcion'   => $alternativa
                 ]);
@@ -906,7 +906,7 @@ class PreguntaSeeder extends Seeder
                             ],  ]; 
 
         foreach ($preguntas as $menuData) {
-            $pregunta = Pregunta::firstOrCreate(
+            $pregunta = Pregunta::create(
                 [
                     'descripcion' => $menuData['descripcion'], 
                     'respuesta' => $menuData['respuesta'], 
@@ -915,7 +915,7 @@ class PreguntaSeeder extends Seeder
                 ]
             );
             foreach($menuData['alternativas'] as $alternativa){
-                $reg = Alternativa::firstOrCreate([
+                $reg = Alternativa::create([
                     'pregunta_id'   => $pregunta->id,
                     'descripcion'   => $alternativa
                 ]);
@@ -937,7 +937,7 @@ class PreguntaSeeder extends Seeder
 
 
         foreach ($preguntas as $menuData) {
-            $pregunta = Pregunta::firstOrCreate(
+            $pregunta = Pregunta::create(
                 [
                     'descripcion' => $menuData['descripcion'], 
                     'respuesta' => $menuData['respuesta'], 
@@ -946,7 +946,7 @@ class PreguntaSeeder extends Seeder
                 ]
             );
             foreach($menuData['alternativas'] as $alternativa){
-                $reg = Alternativa::firstOrCreate([
+                $reg = Alternativa::create([
                     'pregunta_id'   => $pregunta->id,
                     'descripcion'   => $alternativa
                 ]);
@@ -968,7 +968,7 @@ class PreguntaSeeder extends Seeder
 
 
         foreach ($preguntas as $menuData) {
-            $pregunta = Pregunta::firstOrCreate(
+            $pregunta = Pregunta::create(
                 [
                     'descripcion' => $menuData['descripcion'], 
                     'respuesta' => $menuData['respuesta'], 
@@ -977,7 +977,7 @@ class PreguntaSeeder extends Seeder
                 ]
             );
             foreach($menuData['alternativas'] as $alternativa){
-                $reg = Alternativa::firstOrCreate([
+                $reg = Alternativa::create([
                     'pregunta_id'   => $pregunta->id,
                     'descripcion'   => $alternativa
                 ]);
@@ -1000,7 +1000,7 @@ class PreguntaSeeder extends Seeder
                             
                             
                                     foreach ($preguntas as $menuData) {
-            $pregunta = Pregunta::firstOrCreate(
+            $pregunta = Pregunta::create(
                 [
                     'descripcion' => $menuData['descripcion'], 
                     'respuesta' => $menuData['respuesta'], 
@@ -1009,7 +1009,7 @@ class PreguntaSeeder extends Seeder
                 ]
             );
             foreach($menuData['alternativas'] as $alternativa){
-                $reg = Alternativa::firstOrCreate([
+                $reg = Alternativa::create([
                     'pregunta_id'   => $pregunta->id,
                     'descripcion'   => $alternativa
                 ]);
@@ -1031,7 +1031,7 @@ class PreguntaSeeder extends Seeder
                             
                             
                                     foreach ($preguntas as $menuData) {
-            $pregunta = Pregunta::firstOrCreate(
+            $pregunta = Pregunta::create(
                 [
                     'descripcion' => $menuData['descripcion'], 
                     'respuesta' => $menuData['respuesta'], 
@@ -1040,7 +1040,7 @@ class PreguntaSeeder extends Seeder
                 ]
             );
             foreach($menuData['alternativas'] as $alternativa){
-                $reg = Alternativa::firstOrCreate([
+                $reg = Alternativa::create([
                     'pregunta_id'   => $pregunta->id,
                     'descripcion'   => $alternativa
                 ]);
@@ -1063,7 +1063,7 @@ class PreguntaSeeder extends Seeder
                             
                             
                                     foreach ($preguntas as $menuData) {
-            $pregunta = Pregunta::firstOrCreate(
+            $pregunta = Pregunta::create(
                 [
                     'descripcion' => $menuData['descripcion'], 
                     'respuesta' => $menuData['respuesta'], 
@@ -1072,7 +1072,7 @@ class PreguntaSeeder extends Seeder
                 ]
             );
             foreach($menuData['alternativas'] as $alternativa){
-                $reg = Alternativa::firstOrCreate([
+                $reg = Alternativa::create([
                     'pregunta_id'   => $pregunta->id,
                     'descripcion'   => $alternativa
                 ]);
@@ -1094,7 +1094,7 @@ class PreguntaSeeder extends Seeder
                                     ];
                             
                                     foreach ($preguntas as $menuData) {
-            $pregunta = Pregunta::firstOrCreate(
+            $pregunta = Pregunta::create(
                 [
                     'descripcion' => $menuData['descripcion'], 
                     'respuesta' => $menuData['respuesta'], 
@@ -1103,7 +1103,7 @@ class PreguntaSeeder extends Seeder
                 ]
             );
             foreach($menuData['alternativas'] as $alternativa){
-                $reg = Alternativa::firstOrCreate([
+                $reg = Alternativa::create([
                     'pregunta_id'   => $pregunta->id,
                     'descripcion'   => $alternativa
                 ]);
@@ -1125,7 +1125,7 @@ class PreguntaSeeder extends Seeder
                             
                             
                                     foreach ($preguntas as $menuData) {
-            $pregunta = Pregunta::firstOrCreate(
+            $pregunta = Pregunta::create(
                 [
                     'descripcion' => $menuData['descripcion'], 
                     'respuesta' => $menuData['respuesta'], 
@@ -1134,7 +1134,7 @@ class PreguntaSeeder extends Seeder
                 ]
             );
             foreach($menuData['alternativas'] as $alternativa){
-                $reg = Alternativa::firstOrCreate([
+                $reg = Alternativa::create([
                     'pregunta_id'   => $pregunta->id,
                     'descripcion'   => $alternativa
                 ]);
@@ -1157,7 +1157,7 @@ class PreguntaSeeder extends Seeder
                             
                             
                                     foreach ($preguntas as $menuData) {
-            $pregunta = Pregunta::firstOrCreate(
+            $pregunta = Pregunta::create(
                 [
                     'descripcion' => $menuData['descripcion'], 
                     'respuesta' => $menuData['respuesta'], 
@@ -1166,7 +1166,7 @@ class PreguntaSeeder extends Seeder
                 ]
             );
             foreach($menuData['alternativas'] as $alternativa){
-                $reg = Alternativa::firstOrCreate([
+                $reg = Alternativa::create([
                     'pregunta_id'   => $pregunta->id,
                     'descripcion'   => $alternativa
                 ]);
@@ -1188,7 +1188,7 @@ class PreguntaSeeder extends Seeder
                             
                             
                                     foreach ($preguntas as $menuData) {
-            $pregunta = Pregunta::firstOrCreate(
+            $pregunta = Pregunta::create(
                 [
                     'descripcion' => $menuData['descripcion'], 
                     'respuesta' => $menuData['respuesta'], 
@@ -1197,7 +1197,7 @@ class PreguntaSeeder extends Seeder
                 ]
             );
             foreach($menuData['alternativas'] as $alternativa){
-                $reg = Alternativa::firstOrCreate([
+                $reg = Alternativa::create([
                     'pregunta_id'   => $pregunta->id,
                     'descripcion'   => $alternativa
                 ]);
@@ -1218,7 +1218,7 @@ class PreguntaSeeder extends Seeder
                                         ],  ];
                             
                                     foreach ($preguntas as $menuData) {
-            $pregunta = Pregunta::firstOrCreate(
+            $pregunta = Pregunta::create(
                 [
                     'descripcion' => $menuData['descripcion'], 
                     'respuesta' => $menuData['respuesta'], 
@@ -1227,7 +1227,7 @@ class PreguntaSeeder extends Seeder
                 ]
             );
             foreach($menuData['alternativas'] as $alternativa){
-                $reg = Alternativa::firstOrCreate([
+                $reg = Alternativa::create([
                     'pregunta_id'   => $pregunta->id,
                     'descripcion'   => $alternativa
                 ]);
@@ -1249,7 +1249,7 @@ class PreguntaSeeder extends Seeder
                             
                             
                                     foreach ($preguntas as $menuData) {
-            $pregunta = Pregunta::firstOrCreate(
+            $pregunta = Pregunta::create(
                 [
                     'descripcion' => $menuData['descripcion'], 
                     'respuesta' => $menuData['respuesta'], 
@@ -1258,7 +1258,7 @@ class PreguntaSeeder extends Seeder
                 ]
             );
             foreach($menuData['alternativas'] as $alternativa){
-                $reg = Alternativa::firstOrCreate([
+                $reg = Alternativa::create([
                     'pregunta_id'   => $pregunta->id,
                     'descripcion'   => $alternativa
                 ]);
@@ -1279,7 +1279,7 @@ class PreguntaSeeder extends Seeder
                                         ],  ];
                             
                                     foreach ($preguntas as $menuData) {
-            $pregunta = Pregunta::firstOrCreate(
+            $pregunta = Pregunta::create(
                 [
                     'descripcion' => $menuData['descripcion'], 
                     'respuesta' => $menuData['respuesta'], 
@@ -1288,7 +1288,7 @@ class PreguntaSeeder extends Seeder
                 ]
             );
             foreach($menuData['alternativas'] as $alternativa){
-                $reg = Alternativa::firstOrCreate([
+                $reg = Alternativa::create([
                     'pregunta_id'   => $pregunta->id,
                     'descripcion'   => $alternativa
                 ]);
@@ -1309,7 +1309,7 @@ class PreguntaSeeder extends Seeder
                                         ],  ];
                             
                                     foreach ($preguntas as $menuData) {
-            $pregunta = Pregunta::firstOrCreate(
+            $pregunta = Pregunta::create(
                 [
                     'descripcion' => $menuData['descripcion'], 
                     'respuesta' => $menuData['respuesta'], 
@@ -1318,7 +1318,7 @@ class PreguntaSeeder extends Seeder
                 ]
             );
             foreach($menuData['alternativas'] as $alternativa){
-                $reg = Alternativa::firstOrCreate([
+                $reg = Alternativa::create([
                     'pregunta_id'   => $pregunta->id,
                     'descripcion'   => $alternativa
                 ]);
@@ -1339,7 +1339,7 @@ class PreguntaSeeder extends Seeder
                                         ],  ];
                             
                                     foreach ($preguntas as $menuData) {
-            $pregunta = Pregunta::firstOrCreate(
+            $pregunta = Pregunta::create(
                 [
                     'descripcion' => $menuData['descripcion'], 
                     'respuesta' => $menuData['respuesta'], 
@@ -1348,7 +1348,7 @@ class PreguntaSeeder extends Seeder
                 ]
             );
             foreach($menuData['alternativas'] as $alternativa){
-                $reg = Alternativa::firstOrCreate([
+                $reg = Alternativa::create([
                     'pregunta_id'   => $pregunta->id,
                     'descripcion'   => $alternativa
                 ]);
@@ -1369,7 +1369,7 @@ class PreguntaSeeder extends Seeder
                                         ],  ];
                             
                                     foreach ($preguntas as $menuData) {
-            $pregunta = Pregunta::firstOrCreate(
+            $pregunta = Pregunta::create(
                 [
                     'descripcion' => $menuData['descripcion'], 
                     'respuesta' => $menuData['respuesta'], 
@@ -1378,7 +1378,7 @@ class PreguntaSeeder extends Seeder
                 ]
             );
             foreach($menuData['alternativas'] as $alternativa){
-                $reg = Alternativa::firstOrCreate([
+                $reg = Alternativa::create([
                     'pregunta_id'   => $pregunta->id,
                     'descripcion'   => $alternativa
                 ]);
@@ -1399,7 +1399,7 @@ class PreguntaSeeder extends Seeder
                                         ],  ];
                             
                                     foreach ($preguntas as $menuData) {
-            $pregunta = Pregunta::firstOrCreate(
+            $pregunta = Pregunta::create(
                 [
                     'descripcion' => $menuData['descripcion'], 
                     'respuesta' => $menuData['respuesta'], 
@@ -1408,7 +1408,7 @@ class PreguntaSeeder extends Seeder
                 ]
             );
             foreach($menuData['alternativas'] as $alternativa){
-                $reg = Alternativa::firstOrCreate([
+                $reg = Alternativa::create([
                     'pregunta_id'   => $pregunta->id,
                     'descripcion'   => $alternativa
                 ]);
@@ -1429,7 +1429,7 @@ class PreguntaSeeder extends Seeder
                                         ],  ];
                             
                                     foreach ($preguntas as $menuData) {
-            $pregunta = Pregunta::firstOrCreate(
+            $pregunta = Pregunta::create(
                 [
                     'descripcion' => $menuData['descripcion'], 
                     'respuesta' => $menuData['respuesta'], 
@@ -1438,7 +1438,7 @@ class PreguntaSeeder extends Seeder
                 ]
             );
             foreach($menuData['alternativas'] as $alternativa){
-                $reg = Alternativa::firstOrCreate([
+                $reg = Alternativa::create([
                     'pregunta_id'   => $pregunta->id,
                     'descripcion'   => $alternativa
                 ]);
@@ -1459,7 +1459,7 @@ class PreguntaSeeder extends Seeder
                                         ],  ];
                             
                                     foreach ($preguntas as $menuData) {
-            $pregunta = Pregunta::firstOrCreate(
+            $pregunta = Pregunta::create(
                 [
                     'descripcion' => $menuData['descripcion'], 
                     'respuesta' => $menuData['respuesta'], 
@@ -1468,7 +1468,7 @@ class PreguntaSeeder extends Seeder
                 ]
             );
             foreach($menuData['alternativas'] as $alternativa){
-                $reg = Alternativa::firstOrCreate([
+                $reg = Alternativa::create([
                     'pregunta_id'   => $pregunta->id,
                     'descripcion'   => $alternativa
                 ]);
@@ -1495,7 +1495,7 @@ class PreguntaSeeder extends Seeder
                             
 
                                                 foreach ($preguntas as $menuData) {
-            $pregunta = Pregunta::firstOrCreate(
+            $pregunta = Pregunta::create(
                 [
                     'descripcion' => $menuData['descripcion'], 
                     'respuesta' => $menuData['respuesta'], 
@@ -1504,7 +1504,7 @@ class PreguntaSeeder extends Seeder
                 ]
             );
             foreach($menuData['alternativas'] as $alternativa){
-                $reg = Alternativa::firstOrCreate([
+                $reg = Alternativa::create([
                     'pregunta_id'   => $pregunta->id,
                     'descripcion'   => $alternativa
                 ]);
@@ -1526,7 +1526,7 @@ class PreguntaSeeder extends Seeder
                                 
                                 
                                         foreach ($preguntas as $menuData) {
-            $pregunta = Pregunta::firstOrCreate(
+            $pregunta = Pregunta::create(
                 [
                     'descripcion' => $menuData['descripcion'], 
                     'respuesta' => $menuData['respuesta'], 
@@ -1535,7 +1535,7 @@ class PreguntaSeeder extends Seeder
                 ]
             );
             foreach($menuData['alternativas'] as $alternativa){
-                $reg = Alternativa::firstOrCreate([
+                $reg = Alternativa::create([
                     'pregunta_id'   => $pregunta->id,
                     'descripcion'   => $alternativa
                 ]);
@@ -1557,7 +1557,7 @@ class PreguntaSeeder extends Seeder
 
 
         foreach ($preguntas as $menuData) {
-            $pregunta = Pregunta::firstOrCreate(
+            $pregunta = Pregunta::create(
                 [
                     'descripcion' => $menuData['descripcion'], 
                     'respuesta' => $menuData['respuesta'], 
@@ -1566,7 +1566,7 @@ class PreguntaSeeder extends Seeder
                 ]
             );
             foreach($menuData['alternativas'] as $alternativa){
-                $reg = Alternativa::firstOrCreate([
+                $reg = Alternativa::create([
                     'pregunta_id'   => $pregunta->id,
                     'descripcion'   => $alternativa
                 ]);
@@ -1588,7 +1588,7 @@ class PreguntaSeeder extends Seeder
                                     
                                     
                                             foreach ($preguntas as $menuData) {
-            $pregunta = Pregunta::firstOrCreate(
+            $pregunta = Pregunta::create(
                 [
                     'descripcion' => $menuData['descripcion'], 
                     'respuesta' => $menuData['respuesta'], 
@@ -1597,7 +1597,7 @@ class PreguntaSeeder extends Seeder
                 ]
             );
             foreach($menuData['alternativas'] as $alternativa){
-                $reg = Alternativa::firstOrCreate([
+                $reg = Alternativa::create([
                     'pregunta_id'   => $pregunta->id,
                     'descripcion'   => $alternativa
                 ]);
@@ -1619,7 +1619,7 @@ class PreguntaSeeder extends Seeder
 
 
         foreach ($preguntas as $menuData) {
-            $pregunta = Pregunta::firstOrCreate(
+            $pregunta = Pregunta::create(
                 [
                     'descripcion' => $menuData['descripcion'], 
                     'respuesta' => $menuData['respuesta'], 
@@ -1628,7 +1628,7 @@ class PreguntaSeeder extends Seeder
                 ]
             );
             foreach($menuData['alternativas'] as $alternativa){
-                $reg = Alternativa::firstOrCreate([
+                $reg = Alternativa::create([
                     'pregunta_id'   => $pregunta->id,
                     'descripcion'   => $alternativa
                 ]);
@@ -1650,7 +1650,7 @@ class PreguntaSeeder extends Seeder
 
 
         foreach ($preguntas as $menuData) {
-            $pregunta = Pregunta::firstOrCreate(
+            $pregunta = Pregunta::create(
                 [
                     'descripcion' => $menuData['descripcion'], 
                     'respuesta' => $menuData['respuesta'], 
@@ -1659,7 +1659,7 @@ class PreguntaSeeder extends Seeder
                 ]
             );
             foreach($menuData['alternativas'] as $alternativa){
-                $reg = Alternativa::firstOrCreate([
+                $reg = Alternativa::create([
                     'pregunta_id'   => $pregunta->id,
                     'descripcion'   => $alternativa
                 ]);
@@ -1681,7 +1681,7 @@ class PreguntaSeeder extends Seeder
 
 
         foreach ($preguntas as $menuData) {
-            $pregunta = Pregunta::firstOrCreate(
+            $pregunta = Pregunta::create(
                 [
                     'descripcion' => $menuData['descripcion'], 
                     'respuesta' => $menuData['respuesta'], 
@@ -1690,7 +1690,7 @@ class PreguntaSeeder extends Seeder
                 ]
             );
             foreach($menuData['alternativas'] as $alternativa){
-                $reg = Alternativa::firstOrCreate([
+                $reg = Alternativa::create([
                     'pregunta_id'   => $pregunta->id,
                     'descripcion'   => $alternativa
                 ]);
@@ -1712,7 +1712,7 @@ class PreguntaSeeder extends Seeder
 
 
         foreach ($preguntas as $menuData) {
-            $pregunta = Pregunta::firstOrCreate(
+            $pregunta = Pregunta::create(
                 [
                     'descripcion' => $menuData['descripcion'], 
                     'respuesta' => $menuData['respuesta'], 
@@ -1721,7 +1721,7 @@ class PreguntaSeeder extends Seeder
                 ]
             );
             foreach($menuData['alternativas'] as $alternativa){
-                $reg = Alternativa::firstOrCreate([
+                $reg = Alternativa::create([
                     'pregunta_id'   => $pregunta->id,
                     'descripcion'   => $alternativa
                 ]);
@@ -1743,7 +1743,7 @@ class PreguntaSeeder extends Seeder
                                                     
                                                     
                                                             foreach ($preguntas as $menuData) {
-            $pregunta = Pregunta::firstOrCreate(
+            $pregunta = Pregunta::create(
                 [
                     'descripcion' => $menuData['descripcion'], 
                     'respuesta' => $menuData['respuesta'], 
@@ -1752,7 +1752,7 @@ class PreguntaSeeder extends Seeder
                 ]
             );
             foreach($menuData['alternativas'] as $alternativa){
-                $reg = Alternativa::firstOrCreate([
+                $reg = Alternativa::create([
                     'pregunta_id'   => $pregunta->id,
                     'descripcion'   => $alternativa
                 ]);
@@ -1774,7 +1774,7 @@ class PreguntaSeeder extends Seeder
                                                     
                                                     
                                                             foreach ($preguntas as $menuData) {
-            $pregunta = Pregunta::firstOrCreate(
+            $pregunta = Pregunta::create(
                 [
                     'descripcion' => $menuData['descripcion'], 
                     'respuesta' => $menuData['respuesta'], 
@@ -1783,7 +1783,7 @@ class PreguntaSeeder extends Seeder
                 ]
             );
             foreach($menuData['alternativas'] as $alternativa){
-                $reg = Alternativa::firstOrCreate([
+                $reg = Alternativa::create([
                     'pregunta_id'   => $pregunta->id,
                     'descripcion'   => $alternativa
                 ]);
@@ -1805,7 +1805,7 @@ class PreguntaSeeder extends Seeder
 
 
         foreach ($preguntas as $menuData) {
-            $pregunta = Pregunta::firstOrCreate(
+            $pregunta = Pregunta::create(
                 [
                     'descripcion' => $menuData['descripcion'], 
                     'respuesta' => $menuData['respuesta'], 
@@ -1814,7 +1814,7 @@ class PreguntaSeeder extends Seeder
                 ]
             );
             foreach($menuData['alternativas'] as $alternativa){
-                $reg = Alternativa::firstOrCreate([
+                $reg = Alternativa::create([
                     'pregunta_id'   => $pregunta->id,
                     'descripcion'   => $alternativa
                 ]);
@@ -1836,7 +1836,7 @@ class PreguntaSeeder extends Seeder
 
 
         foreach ($preguntas as $menuData) {
-            $pregunta = Pregunta::firstOrCreate(
+            $pregunta = Pregunta::create(
                 [
                     'descripcion' => $menuData['descripcion'], 
                     'respuesta' => $menuData['respuesta'], 
@@ -1845,7 +1845,7 @@ class PreguntaSeeder extends Seeder
                 ]
             );
             foreach($menuData['alternativas'] as $alternativa){
-                $reg = Alternativa::firstOrCreate([
+                $reg = Alternativa::create([
                     'pregunta_id'   => $pregunta->id,
                     'descripcion'   => $alternativa
                 ]);
@@ -1868,7 +1868,7 @@ class PreguntaSeeder extends Seeder
 
 
                                                                         foreach ($preguntas as $menuData) {
-                                                                            $pregunta = Pregunta::firstOrCreate(
+                                                                            $pregunta = Pregunta::create(
                                                                                 [
                                                                                     'descripcion' => $menuData['descripcion'], 
                                                                                     'respuesta' => $menuData['respuesta'], 
@@ -1877,7 +1877,7 @@ class PreguntaSeeder extends Seeder
                                                                                 ]
                                                                             );
                                                                             foreach($menuData['alternativas'] as $alternativa){
-                                                                                $reg = Alternativa::firstOrCreate([
+                                                                                $reg = Alternativa::create([
                                                                                     'pregunta_id'   => $pregunta->id,
                                                                                     'descripcion'   => $alternativa
                                                                                 ]);
@@ -1901,7 +1901,7 @@ class PreguntaSeeder extends Seeder
 
 
                     foreach ($preguntas as $menuData) {
-                        $pregunta = Pregunta::firstOrCreate(
+                        $pregunta = Pregunta::create(
                             [
                                 'descripcion' => $menuData['descripcion'], 
                                 'respuesta' => $menuData['respuesta'], 
@@ -1910,7 +1910,7 @@ class PreguntaSeeder extends Seeder
                             ]
                         );
                         foreach($menuData['alternativas'] as $alternativa){
-                            $reg = Alternativa::firstOrCreate([
+                            $reg = Alternativa::create([
                                 'pregunta_id'   => $pregunta->id,
                                 'descripcion'   => $alternativa
                             ]);
