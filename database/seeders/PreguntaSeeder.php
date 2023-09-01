@@ -289,11 +289,6 @@ class PreguntaSeeder extends Seeder
                     ],  [  'descripcion' => 'Quien es el director ejecutivo de la unidad ejecutora 404 Red de Salud Huanuco', 'respuesta' => 'Miguel Angel Paco Fernandez', 'examen_id' => $id, 'punto' => 3,'alternativas' => [  'Wilmer Espinoza Torres','Rolling Cruz Mlaprtida','Miguel Angel Paco Fernandez','Yuri Troncos Taquio','NA', ]
                     ],  ]; 
         
-        
-        
-        
-        
-        
                 foreach ($preguntas as $menuData) {
             $pregunta = Pregunta::firstOrCreate(
                 [
@@ -324,11 +319,6 @@ class PreguntaSeeder extends Seeder
                     ],  [  'descripcion' => 'Quien es el director ejecutivo de la unidad ejecutora 404 Red de Salud Huanuco', 'respuesta' => 'Miguel Angel Paco Fernandez', 'examen_id' => $id, 'punto' => 3,'alternativas' => [  'Wilmer Espinoza Torres','Rolling Cruz Mlaprtida','Miguel Angel Paco Fernandez','Yuri Troncos Taquio','NA', ]
                     ],  ]; 
         
-        
-        
-        
-        
-        
                 foreach ($preguntas as $menuData) {
             $pregunta = Pregunta::firstOrCreate(
                 [
@@ -346,7 +336,7 @@ class PreguntaSeeder extends Seeder
             }
         }
         $id= Examen::where('titulo', 'EXAMEN DE CONOCIMIENTO - 3934')->value('id'); 
-                $preguntas = [ 
+                $preguntas = [
                     [  'descripcion' => '¿Cuándo se considera ruptura de cadena de frio?', 'respuesta' => 'Cuando la temperatura se encuentra por debajo de los 0°C y encima de +8°C', 'examen_id' => $id, 'punto' => 2,'alternativas' => [  'Cuando el Valor de la temperatura ha sobrepasado - 2 grados centígrados','Cuando el valor de la temperatura osicla entre los 0 grados y + 8 °C','Cuando la temperatura se encuentra por debajo de los 0°C y encima de +8°C','Cuando el valor de la temperatura se haya entre los 2 y 8 grados centígrados','NA', ]
                     ],  [  'descripcion' => 'La Promoción de la Salud consiste en proporcionar: ', 'respuesta' => 'Medios para mejorar la salud y ejercer un mayor control sobre la misma ', 'examen_id' => $id, 'punto' => 2,'alternativas' => [  'Bienestar físico, mental y social identificando aspiraciones y necesidades','Medios necesarios para evitar el progreso de las enfermedades','NA','Medios para mejorar la salud y ejercer un mayor control sobre la misma ','Bienestar físico, mental y social en el proceso de recuperación de la enfermedad', ]
                     ],  [  'descripcion' => '¿Por qué se recomienda no aplicar inmunobiológicos intramusculares en la región glútea?', 'respuesta' => 'Porque la región glútea tiene abundante tejido adiposo (grasa subcutánea); que pueden interferir con la respuesta inmunológica; además existe la posibilidad de daño al nervio ciático.', 'examen_id' => $id, 'punto' => 2,'alternativas' => [  'Por la absorción lenta de inmunobiologicos','Porque la región glútea tiene abundante tejido adiposo (grasa subcutánea); que pueden interferir con la respuesta inmunológica; además existe la posibilidad de daño al nervio ciático.','Porque no se debe administrar concentraciones menores a 5 ml','Porque es dolorosa, produce reacciones más serias que dificulta la movilidad de los niños','NA', ]
@@ -358,10 +348,6 @@ class PreguntaSeeder extends Seeder
                     ],  [  'descripcion' => '¿Son funciones esenciales de la Salud Publica lo siguiente?', 'respuesta' => 'Promoción de la Salud, participación social y empoderamiento', 'examen_id' => $id, 'punto' => 1,'alternativas' => [  'NA','Promoción de la Salud, participación social y empoderamiento','Desarrollo de políticas, planes y capacidad de gestión','Monitoreo, evaluación y análisis de la situación de salud','La recuperación y rehabilitación de la salud', ]
                     ],  [  'descripcion' => 'Quien es el director ejecutivo de la unidad ejecutora 404 Red de Salud Huanuco', 'respuesta' => 'Miguel Angel Paco Fernandez', 'examen_id' => $id, 'punto' => 3,'alternativas' => [  'Wilmer Espinoza Torres','Rolling Cruz Mlaprtida','Miguel Angel Paco Fernandez','Yuri Troncos Taquio','NA', ]
                     ],  ]; 
-        
-        
-        
-        
         
                 foreach ($preguntas as $menuData) {
             $pregunta = Pregunta::firstOrCreate(
@@ -1897,6 +1883,40 @@ class PreguntaSeeder extends Seeder
                                                                                 ]);
                                                                             }
                                                                         }
+
+
+                $id= Examen::where('titulo', 'EXAMEN DE CONOCIMIENTO - 3757')->value('id'); 
+                $preguntas = [ 
+                        ['descripcion' => 'EL PADECIMIENTO QUE PUEDE ASOCIARSE CON LA FIBROSIS QUISTICA ES', 'respuesta' => 'EL ILEO MECONIAL', 'examen_id' => $id, 'punto' => 2,'alternativas' => [  'EL ILEO MECONIAL','LA ENTEROCOLITIS NECROSANTE','LA ENFERMEDAD DE HIRSCHPRUNG','EL HIPOTIROIDISMO','LA ATRESIA DEL ILEON', ]
+                    ],    ['descripcion' => 'EL MECANISMO INMUNOLOGICO DE DAÑO EN EL LUPUS ERITEMATOSO GENERALIZADO MAS IMPORTANTE ES', 'respuesta' => 'EL DEPOSITO DE COMPLEJOS INMUNES', 'examen_id' => $id, 'punto' => 2,'alternativas' => [  'LA ANAFILAXIA','LA CITOTOXICIDAD MEDIADA POR ANTICUERPOS ','EL DEPOSITO DE COMPLEJOS INMUNES','LA HIPERSENSIBILIDAD RETARDADA','EL DAÑO TISULAR MEDIADO POR CELULAS', ]
+                    ],    ['descripcion' => 'PACIENTE MASCULINO DE 37 AÑOS DE EDAD QUE ACUDE A URGENCIAS POR FIEBRE, DOLOR ABDOMINAL DIFUSO, A LA EXPLORACIÓN FISICA SE ENCUENTRA GIORDANO BILATERAL. EGO: LEUCOCITOS 10 X CAMPO, BACTERIAS ++, RX DE ABDOMEN CON SILUETA RENAL, PRESENCIA DE AIRE DE FORMA BILATERAL. CON ESTOS DATOS ESTABLECE EL DX. DE:', 'respuesta' => 'PIELONEFRITIS ENFISEMATOSA', 'examen_id' => $id, 'punto' => 2,'alternativas' => [  'LITIASIS URINARIA','INFECCIÓN DE VIAS URINARIAS BAJAS','PIELONEFRITIS ENFISEMATOSA','CISTITIS','POROSTATITIS', ]
+                    ],    ['descripcion' => 'ESTRUCTURA QUE FRECUENTEMENTE LESIONAN LAS FRACTURAS DEL HUMERO LOCALIZADAS EN LA UNIÓN DEL TERCIO MEDIO CON EL DISTAL', 'respuesta' => 'NERVIO RADIAL', 'examen_id' => $id, 'punto' => 2,'alternativas' => [  'NERVIO CUBITAL','NERVIO RADIAL','NERVIO MEDIANO','ARTERIA HUMERAL','VENA HUMERAL', ]
+                    ],    ['descripcion' => 'LA CAUSA MAS FRECUENTE DE MUERTE POSTERIOR A UN INFARTO A UN INFARTO DEL MIOCARDIO ES LA PRESENTACIÓN DE:', 'respuesta' => 'TAQUIARRITMIAS VENTRICULARES', 'examen_id' => $id, 'punto' => 2,'alternativas' => [  'UN NUEVO INFARTO DEL MIOCARDIO','INSUFIENCIA CARDIACA PROGRESIVA','TAQUIARRITMIAS VENTRICULARES','BLOQUEO AURICULOVENTRICULAR COMPLETO','ANEURISMA VENTRICULAR', ]
+                    ],    ['descripcion' => 'A UN RECIEN NACIDO QUE AL MINUTO PRESENTA LLANTO DEBIL, FRECUENCIA LLANTO DEBIL, FRECUENCIA CARDIACA DE 120 POR MINUTO, LIGERA FLEXIÓN DE LAS EXTREMIDADES, REACCIÓN DISCRETA A LOS ESTIMULOS Y ACROCIANOSIS. LE CORRESPONDE UNA CALIFICACIÓN DE APGAR DE:', 'respuesta' => '6', 'examen_id' => $id, 'punto' => 1,'alternativas' => [  '2','4','6','8','10', ]
+                    ],    ['descripcion' => 'LA INTOLERANCIA A LA LACTOSA EN LOS NIÑOS ES DEBIDA A LA ALTERACIÓN DE:', 'respuesta' => 'LAS MICROVELLOSIDADES INTESTINALES', 'examen_id' => $id, 'punto' => 2,'alternativas' => [  'LA ABSORCIÓN DE LIQUIDOS EN EL COLON','LA ABSORCIÓN INTESTINAL','LAS MICROVELLOSIDADES INTESTINALES','LA MUCOSA COLONICA','LA SUBMUCOSA INTESTINAL', ]
+                    ],    ['descripcion' => '¿EN CAPA DE LA PIEL LOS MELANOCITOS Y COMPLEJOS MELANOPROTEINICO ALCANZAN SU MAXIMA CONCENTRACIÓN?', 'respuesta' => 'BASAL', 'examen_id' => $id, 'punto' => 2,'alternativas' => [  'ESPINOSA','GRANULOSA','BASAL','DERMIS','CORNEA', ]
+                    ],    ['descripcion' => 'SE DENOMINA (       ) A TODA ENFERMERDAD INFECCIOSA QUE AFECTA A UN PORCENTAJE ELEVADO DE LA POBLACIÓN EN DOS O MÁS PAISES  DE UNA REGIÓN EPIDEMIOLOGICA:', 'respuesta' => 'PANDEMIA', 'examen_id' => $id, 'punto' => 2,'alternativas' => [  'PANDEMIA','EPIDEMIA','BROTE','ENDEMIA','HIPERENDEMIA', ]
+                    ],    ['descripcion' => 'QUIEN ES EL DIRECTOR EJECUTIVO ACTUAL DE LA U.E 404 RED DE SALUD HUANUCO', 'respuesta' => 'MIGUEL ANGEL PACO FERNANDEZ', 'examen_id' => $id, 'punto' => 3,'alternativas' => [  'MIGUEL ANGEL PACO FERNANDEZ','WILMER ESPINOZA TORRES ','ROLIN CRUZ MALPARTIDA ','YURI TRONCOS TAQUIO','N.A', ]
+                    ],  ];
+
+
+                    foreach ($preguntas as $menuData) {
+                        $pregunta = Pregunta::firstOrCreate(
+                            [
+                                'descripcion' => $menuData['descripcion'], 
+                                'respuesta' => $menuData['respuesta'], 
+                                'examen_id' => $menuData['examen_id'], 
+                                'punto' => $menuData['punto'],
+                            ]
+                        );
+                        foreach($menuData['alternativas'] as $alternativa){
+                            $reg = Alternativa::firstOrCreate([
+                                'pregunta_id'   => $pregunta->id,
+                                'descripcion'   => $alternativa
+                            ]);
+                        }
+                    }
+
 
 
     }

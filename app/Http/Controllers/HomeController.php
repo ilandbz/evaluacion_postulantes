@@ -67,7 +67,7 @@ class HomeController extends Controller
 			'fecha_hora'	=> date('Y-m-d'),
 			'totalincorrectas' => $incorrectas,
 			'nota' => $puntajetotal,
-			'estado' => $puntajetotal>13 ? 'APROBADO' : 'DESAPROBADO',
+			'estado' => $puntajetotal>=11 ? 'APROBADO' : 'DESAPROBADO',
 		]);
 		foreach($miarreglo as $fila){
 			AlternativaMarcada::firstOrCreate([
