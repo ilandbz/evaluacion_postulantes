@@ -45,7 +45,7 @@
                         @php    $i=1;  @endphp
                         <div class="row">
                             @foreach ($preguntas as $index => $fila)
-                                <div class="col-md-6">
+                                <div class="col-md-12">
                                     <div class="card">
                                         <div class="card-header" id="heading{{ $index + 1 }}">
                                             <h6 class="mb-0">
