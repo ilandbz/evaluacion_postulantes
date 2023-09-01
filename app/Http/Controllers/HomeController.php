@@ -50,7 +50,7 @@ class HomeController extends Controller
 			$row['punto']=0;
 			$pregunta = Pregunta::find($fila['idpregunta']);
 			if($pregunta['respuesta']==$marcado){
-				$puntajetotal+=2;
+				$puntajetotal+=$pregunta['punto'];
 				$row['punto']=$pregunta['punto'];
 			}else{
 				$incorrectas++;
