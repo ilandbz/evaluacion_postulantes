@@ -15,7 +15,7 @@ class PreguntaSeeder extends Seeder
      */
     public function run(): void
     {           
-        $id= Examen::where('titulo', 'EXAMEN DE CONOCIMIENTO - 4209')->value('id'); 
+        $id= Examen::where('titulo', 'EXAMEN DE CONOCIMIENTO - 3051')->value('id'); 
         $preguntas = [ 
             [  'descripcion' => '¿Cuál es la ley de Ética de la Función Pública?', 'respuesta' => 'LEY N° 27815.', 'examen_id' => $id, 'punto' => 2,'alternativas' => [  ' LEY N° 27815.',' LEY N° 27818.','LEY N° 27830',' LEY N° 27816',' LEY N° 27817', ]
             ],  [  'descripcion' => ' ¿Cuál es la ley del procedimiento Administrativo General?', 'respuesta' => ' LEY N° 27444', 'examen_id' => $id, 'punto' => 2,'alternativas' => [  'LEY N° 27830','LEY N° 27453',' LEY N° 27444','LEY N° 27443','LEY N° 27450', ]
