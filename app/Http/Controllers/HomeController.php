@@ -32,12 +32,12 @@ class HomeController extends Controller
         return view('app', $data);
     }
     public function examen(){
-        $postulante=Postulante::find(Auth::user()->postulante_id);
-        $data['postulante'] = $postulante;
-        $examen=Examen::where('cargo_id', $postulante->cargo_id)->first();
-        $data['examen']=$examen;
-        $data['preguntas']=Pregunta::where('examen_id', $examen->id)->inRandomOrder()->limit(10)->get();
-        return view('paginas/examen', $data);
+        // $postulante=Postulante::find(Auth::user()->postulante_id);
+        // $data['postulante'] = $postulante;
+        // $examen=Examen::where('cargo_id', $postulante->cargo_id)->first();
+        // $data['examen']=$examen;
+        // $data['preguntas']=Pregunta::where('examen_id', $examen->id)->inRandomOrder()->limit(10)->get();
+        // return view('paginas/examen', $data);
     }
     function resolver(Request $request){
 		$preguntas= $request->pregunta_marcacion;
